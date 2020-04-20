@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1428804E2426C427007BDEE2 /* Replyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1428804D2426C427007BDEE2 /* Replyable.swift */; };
+		145234CE23FEE3BB003D4B13 /* InboxView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145234CC23FEE3BB003D4B13 /* InboxView.storyboard */; };
+		145234D123FEE418003D4B13 /* AccountView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145234CF23FEE418003D4B13 /* AccountView.storyboard */; };
+		14652542241C24B20038181E /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14652541241C24B20038181E /* AuthenticationController.swift */; };
+		14652544241C3A890038181E /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14652543241C3A890038181E /* Reddit.swift */; };
+		146A5FAD24277DAF00F08D19 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146A5FAC24277DAF00F08D19 /* Endpoints.swift */; };
+		146B1A1B2427E3380034D92E /* HTTPRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146B1A1A2427E3380034D92E /* HTTPRequestType.swift */; };
+		14861D4424079C3300D18976 /* Subreddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14861D4324079C3300D18976 /* Subreddit.swift */; };
+		14861D482407A24600D18976 /* Submission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14861D472407A24600D18976 /* Submission.swift */; };
+		14861D4A2407A32400D18976 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14861D492407A32400D18976 /* Comment.swift */; };
+		14861D4C2407A89000D18976 /* Inbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14861D4B2407A89000D18976 /* Inbox.swift */; };
+		14861D4E2407A91600D18976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14861D4D2407A91600D18976 /* Message.swift */; };
+		14861D5024080F5C00D18976 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14861D4F24080F5C00D18976 /* User.swift */; };
+		14861D522408189000D18976 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14861D512408189000D18976 /* SampleData.swift */; };
+		148B7F5323E0AB0600BECD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B7F5223E0AB0600BECD84 /* AppDelegate.swift */; };
+		148B7F5523E0AB0600BECD84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B7F5423E0AB0600BECD84 /* SceneDelegate.swift */; };
+		148B7F5923E0AB0600BECD84 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B7F5823E0AB0600BECD84 /* SecondViewController.swift */; };
+		148B7F5C23E0AB0600BECD84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148B7F5A23E0AB0600BECD84 /* Main.storyboard */; };
+		148B7F5F23E0AB0600BECD84 /* ReddOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 148B7F5D23E0AB0600BECD84 /* ReddOS.xcdatamodeld */; };
+		148B7F6123E0AB0600BECD84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148B7F6023E0AB0600BECD84 /* Assets.xcassets */; };
+		148B7F6423E0AB0600BECD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148B7F6223E0AB0600BECD84 /* LaunchScreen.storyboard */; };
+		148B7F6F23E0AB0700BECD84 /* ReddOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B7F6E23E0AB0700BECD84 /* ReddOSTests.swift */; };
+		148B7F7A23E0AB0700BECD84 /* ReddOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B7F7923E0AB0700BECD84 /* ReddOSUITests.swift */; };
+		14B9B6A82428F944002DC903 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B9B6A72428F944002DC903 /* HomeViewController.swift */; };
+		14B9B6AA24292EED002DC903 /* UserAuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B9B6A924292EED002DC903 /* UserAuthenticationSession.swift */; };
+		14DD20F0242186C300D6D487 /* AuthenticationEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD20EF242186C300D6D487 /* AuthenticationEnums.swift */; };
+		14E3900C242A6D63007CEFE2 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E3900A242A6D63007CEFE2 /* HomeView.storyboard */; };
+		14F56465242533E0009A0AD6 /* RedditAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F56464242533E0009A0AD6 /* RedditAccounts.swift */; };
+		14F564702425BD99009A0AD6 /* RedditContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5646F2425BD99009A0AD6 /* RedditContent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		148B7F6B23E0AB0700BECD84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 148B7F4723E0AB0600BECD84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 148B7F4E23E0AB0600BECD84;
+			remoteInfo = ReddOS;
+		};
+		148B7F7623E0AB0700BECD84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 148B7F4723E0AB0600BECD84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 148B7F4E23E0AB0600BECD84;
+			remoteInfo = ReddOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1428804D2426C427007BDEE2 /* Replyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replyable.swift; sourceTree = "<group>"; };
+		145234CD23FEE3BB003D4B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InboxView.storyboard; sourceTree = "<group>"; };
+		145234D023FEE418003D4B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AccountView.storyboard; sourceTree = "<group>"; };
+		14652541241C24B20038181E /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		14652543241C3A890038181E /* Reddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reddit.swift; sourceTree = "<group>"; };
+		146A5FAC24277DAF00F08D19 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		146B1A1A2427E3380034D92E /* HTTPRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestType.swift; sourceTree = "<group>"; };
+		14861D4324079C3300D18976 /* Subreddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subreddit.swift; sourceTree = "<group>"; };
+		14861D472407A24600D18976 /* Submission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submission.swift; sourceTree = "<group>"; };
+		14861D492407A32400D18976 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		14861D4B2407A89000D18976 /* Inbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inbox.swift; sourceTree = "<group>"; };
+		14861D4D2407A91600D18976 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		14861D4F24080F5C00D18976 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		14861D512408189000D18976 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		148B7F4F23E0AB0600BECD84 /* ReddOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReddOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		148B7F5223E0AB0600BECD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		148B7F5423E0AB0600BECD84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		148B7F5823E0AB0600BECD84 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		148B7F5B23E0AB0600BECD84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		148B7F5E23E0AB0600BECD84 /* ReddOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReddOS.xcdatamodel; sourceTree = "<group>"; };
+		148B7F6023E0AB0600BECD84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		148B7F6323E0AB0600BECD84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		148B7F6523E0AB0600BECD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148B7F6A23E0AB0700BECD84 /* ReddOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReddOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		148B7F6E23E0AB0700BECD84 /* ReddOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReddOSTests.swift; sourceTree = "<group>"; };
+		148B7F7023E0AB0700BECD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148B7F7523E0AB0700BECD84 /* ReddOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReddOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		148B7F7923E0AB0700BECD84 /* ReddOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReddOSUITests.swift; sourceTree = "<group>"; };
+		148B7F7B23E0AB0700BECD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B9B6A72428F944002DC903 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		14B9B6A924292EED002DC903 /* UserAuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationSession.swift; sourceTree = "<group>"; };
+		14DD20EF242186C300D6D487 /* AuthenticationEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEnums.swift; sourceTree = "<group>"; };
+		14E3900B242A6D63007CEFE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeView.storyboard; sourceTree = "<group>"; };
+		14F56464242533E0009A0AD6 /* RedditAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditAccounts.swift; sourceTree = "<group>"; };
+		14F5646624256C9E009A0AD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		14F5646F2425BD99009A0AD6 /* RedditContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditContent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		148B7F4C23E0AB0600BECD84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148B7F6723E0AB0700BECD84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148B7F7223E0AB0700BECD84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143788E9240877CC00B66388 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				14652543241C3A890038181E /* Reddit.swift */,
+				146A5FAC24277DAF00F08D19 /* Endpoints.swift */,
+				146B1A1A2427E3380034D92E /* HTTPRequestType.swift */,
+				143788EA2408786700B66388 /* Authentication */,
+				14861D402407991B00D18976 /* Models */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		143788EA2408786700B66388 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				14B9B6A924292EED002DC903 /* UserAuthenticationSession.swift */,
+				14652541241C24B20038181E /* AuthenticationController.swift */,
+				14DD20EF242186C300D6D487 /* AuthenticationEnums.swift */,
+				14F56464242533E0009A0AD6 /* RedditAccounts.swift */,
+				14F5646624256C9E009A0AD6 /* README.md */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		14861D402407991B00D18976 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14F5646F2425BD99009A0AD6 /* RedditContent.swift */,
+				14861D4F24080F5C00D18976 /* User.swift */,
+				14861D472407A24600D18976 /* Submission.swift */,
+				14861D492407A32400D18976 /* Comment.swift */,
+				14861D4324079C3300D18976 /* Subreddit.swift */,
+				14861D4B2407A89000D18976 /* Inbox.swift */,
+				14861D4D2407A91600D18976 /* Message.swift */,
+				14861D512408189000D18976 /* SampleData.swift */,
+				1428804D2426C427007BDEE2 /* Replyable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		148B7F4623E0AB0600BECD84 = {
+			isa = PBXGroup;
+			children = (
+				148B7F5123E0AB0600BECD84 /* ReddOS */,
+				148B7F6D23E0AB0700BECD84 /* ReddOSTests */,
+				148B7F7823E0AB0700BECD84 /* ReddOSUITests */,
+				148B7F5023E0AB0600BECD84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		148B7F5023E0AB0600BECD84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				148B7F4F23E0AB0600BECD84 /* ReddOS.app */,
+				148B7F6A23E0AB0700BECD84 /* ReddOSTests.xctest */,
+				148B7F7523E0AB0700BECD84 /* ReddOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		148B7F5123E0AB0600BECD84 /* ReddOS */ = {
+			isa = PBXGroup;
+			children = (
+				14B9B6A42428F7A6002DC903 /* Storyboards */,
+				148B7F5223E0AB0600BECD84 /* AppDelegate.swift */,
+				148B7F5423E0AB0600BECD84 /* SceneDelegate.swift */,
+				148B7F5823E0AB0600BECD84 /* SecondViewController.swift */,
+				14B9B6A72428F944002DC903 /* HomeViewController.swift */,
+				148B7F6023E0AB0600BECD84 /* Assets.xcassets */,
+				148B7F5A23E0AB0600BECD84 /* Main.storyboard */,
+				148B7F6223E0AB0600BECD84 /* LaunchScreen.storyboard */,
+				148B7F6523E0AB0600BECD84 /* Info.plist */,
+				148B7F5D23E0AB0600BECD84 /* ReddOS.xcdatamodeld */,
+				143788E9240877CC00B66388 /* API */,
+			);
+			path = ReddOS;
+			sourceTree = "<group>";
+		};
+		148B7F6D23E0AB0700BECD84 /* ReddOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				148B7F6E23E0AB0700BECD84 /* ReddOSTests.swift */,
+				148B7F7023E0AB0700BECD84 /* Info.plist */,
+			);
+			path = ReddOSTests;
+			sourceTree = "<group>";
+		};
+		148B7F7823E0AB0700BECD84 /* ReddOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				148B7F7923E0AB0700BECD84 /* ReddOSUITests.swift */,
+				148B7F7B23E0AB0700BECD84 /* Info.plist */,
+			);
+			path = ReddOSUITests;
+			sourceTree = "<group>";
+		};
+		14B9B6A42428F7A6002DC903 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				14E3900A242A6D63007CEFE2 /* HomeView.storyboard */,
+				145234CF23FEE418003D4B13 /* AccountView.storyboard */,
+				145234CC23FEE3BB003D4B13 /* InboxView.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		148B7F4E23E0AB0600BECD84 /* ReddOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 148B7F7E23E0AB0700BECD84 /* Build configuration list for PBXNativeTarget "ReddOS" */;
+			buildPhases = (
+				148B7F4B23E0AB0600BECD84 /* Sources */,
+				148B7F4C23E0AB0600BECD84 /* Frameworks */,
+				148B7F4D23E0AB0600BECD84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReddOS;
+			productName = ReddOS;
+			productReference = 148B7F4F23E0AB0600BECD84 /* ReddOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		148B7F6923E0AB0700BECD84 /* ReddOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 148B7F8123E0AB0700BECD84 /* Build configuration list for PBXNativeTarget "ReddOSTests" */;
+			buildPhases = (
+				148B7F6623E0AB0700BECD84 /* Sources */,
+				148B7F6723E0AB0700BECD84 /* Frameworks */,
+				148B7F6823E0AB0700BECD84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				148B7F6C23E0AB0700BECD84 /* PBXTargetDependency */,
+			);
+			name = ReddOSTests;
+			productName = ReddOSTests;
+			productReference = 148B7F6A23E0AB0700BECD84 /* ReddOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		148B7F7423E0AB0700BECD84 /* ReddOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 148B7F8423E0AB0700BECD84 /* Build configuration list for PBXNativeTarget "ReddOSUITests" */;
+			buildPhases = (
+				148B7F7123E0AB0700BECD84 /* Sources */,
+				148B7F7223E0AB0700BECD84 /* Frameworks */,
+				148B7F7323E0AB0700BECD84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				148B7F7723E0AB0700BECD84 /* PBXTargetDependency */,
+			);
+			name = ReddOSUITests;
+			productName = ReddOSUITests;
+			productReference = 148B7F7523E0AB0700BECD84 /* ReddOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		148B7F4723E0AB0600BECD84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = SandPeople;
+				TargetAttributes = {
+					148B7F4E23E0AB0600BECD84 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					148B7F6923E0AB0700BECD84 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 148B7F4E23E0AB0600BECD84;
+					};
+					148B7F7423E0AB0700BECD84 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 148B7F4E23E0AB0600BECD84;
+					};
+				};
+			};
+			buildConfigurationList = 148B7F4A23E0AB0600BECD84 /* Build configuration list for PBXProject "ReddOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 148B7F4623E0AB0600BECD84;
+			productRefGroup = 148B7F5023E0AB0600BECD84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				148B7F4E23E0AB0600BECD84 /* ReddOS */,
+				148B7F6923E0AB0700BECD84 /* ReddOSTests */,
+				148B7F7423E0AB0700BECD84 /* ReddOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		148B7F4D23E0AB0600BECD84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E3900C242A6D63007CEFE2 /* HomeView.storyboard in Resources */,
+				148B7F6423E0AB0600BECD84 /* LaunchScreen.storyboard in Resources */,
+				148B7F6123E0AB0600BECD84 /* Assets.xcassets in Resources */,
+				145234D123FEE418003D4B13 /* AccountView.storyboard in Resources */,
+				145234CE23FEE3BB003D4B13 /* InboxView.storyboard in Resources */,
+				148B7F5C23E0AB0600BECD84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148B7F6823E0AB0700BECD84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148B7F7323E0AB0700BECD84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		148B7F4B23E0AB0600BECD84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DD20F0242186C300D6D487 /* AuthenticationEnums.swift in Sources */,
+				14B9B6AA24292EED002DC903 /* UserAuthenticationSession.swift in Sources */,
+				148B7F5923E0AB0600BECD84 /* SecondViewController.swift in Sources */,
+				14652544241C3A890038181E /* Reddit.swift in Sources */,
+				14F564702425BD99009A0AD6 /* RedditContent.swift in Sources */,
+				14861D522408189000D18976 /* SampleData.swift in Sources */,
+				14B9B6A82428F944002DC903 /* HomeViewController.swift in Sources */,
+				14F56465242533E0009A0AD6 /* RedditAccounts.swift in Sources */,
+				14652542241C24B20038181E /* AuthenticationController.swift in Sources */,
+				148B7F5F23E0AB0600BECD84 /* ReddOS.xcdatamodeld in Sources */,
+				146A5FAD24277DAF00F08D19 /* Endpoints.swift in Sources */,
+				148B7F5323E0AB0600BECD84 /* AppDelegate.swift in Sources */,
+				148B7F5523E0AB0600BECD84 /* SceneDelegate.swift in Sources */,
+				14861D4E2407A91600D18976 /* Message.swift in Sources */,
+				14861D4424079C3300D18976 /* Subreddit.swift in Sources */,
+				14861D5024080F5C00D18976 /* User.swift in Sources */,
+				14861D4A2407A32400D18976 /* Comment.swift in Sources */,
+				14861D4C2407A89000D18976 /* Inbox.swift in Sources */,
+				146B1A1B2427E3380034D92E /* HTTPRequestType.swift in Sources */,
+				1428804E2426C427007BDEE2 /* Replyable.swift in Sources */,
+				14861D482407A24600D18976 /* Submission.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148B7F6623E0AB0700BECD84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148B7F6F23E0AB0700BECD84 /* ReddOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148B7F7123E0AB0700BECD84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148B7F7A23E0AB0700BECD84 /* ReddOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		148B7F6C23E0AB0700BECD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 148B7F4E23E0AB0600BECD84 /* ReddOS */;
+			targetProxy = 148B7F6B23E0AB0700BECD84 /* PBXContainerItemProxy */;
+		};
+		148B7F7723E0AB0700BECD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 148B7F4E23E0AB0600BECD84 /* ReddOS */;
+			targetProxy = 148B7F7623E0AB0700BECD84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		145234CC23FEE3BB003D4B13 /* InboxView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145234CD23FEE3BB003D4B13 /* Base */,
+			);
+			name = InboxView.storyboard;
+			sourceTree = "<group>";
+		};
+		145234CF23FEE418003D4B13 /* AccountView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145234D023FEE418003D4B13 /* Base */,
+			);
+			name = AccountView.storyboard;
+			sourceTree = "<group>";
+		};
+		148B7F5A23E0AB0600BECD84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148B7F5B23E0AB0600BECD84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		148B7F6223E0AB0600BECD84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148B7F6323E0AB0600BECD84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		14E3900A242A6D63007CEFE2 /* HomeView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14E3900B242A6D63007CEFE2 /* Base */,
+			);
+			name = HomeView.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		148B7F7C23E0AB0700BECD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		148B7F7D23E0AB0700BECD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		148B7F7F23E0AB0700BECD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB59FVVXCR;
+				INFOPLIST_FILE = ReddOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandpeople.ReddOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		148B7F8023E0AB0700BECD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB59FVVXCR;
+				INFOPLIST_FILE = ReddOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandpeople.ReddOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		148B7F8223E0AB0700BECD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB59FVVXCR;
+				INFOPLIST_FILE = ReddOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandpeople.ReddOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReddOS.app/ReddOS";
+			};
+			name = Debug;
+		};
+		148B7F8323E0AB0700BECD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB59FVVXCR;
+				INFOPLIST_FILE = ReddOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandpeople.ReddOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReddOS.app/ReddOS";
+			};
+			name = Release;
+		};
+		148B7F8523E0AB0700BECD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB59FVVXCR;
+				INFOPLIST_FILE = ReddOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandpeople.ReddOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReddOS;
+			};
+			name = Debug;
+		};
+		148B7F8623E0AB0700BECD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB59FVVXCR;
+				INFOPLIST_FILE = ReddOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandpeople.ReddOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReddOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		148B7F4A23E0AB0600BECD84 /* Build configuration list for PBXProject "ReddOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148B7F7C23E0AB0700BECD84 /* Debug */,
+				148B7F7D23E0AB0700BECD84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		148B7F7E23E0AB0700BECD84 /* Build configuration list for PBXNativeTarget "ReddOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148B7F7F23E0AB0700BECD84 /* Debug */,
+				148B7F8023E0AB0700BECD84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		148B7F8123E0AB0700BECD84 /* Build configuration list for PBXNativeTarget "ReddOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148B7F8223E0AB0700BECD84 /* Debug */,
+				148B7F8323E0AB0700BECD84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		148B7F8423E0AB0700BECD84 /* Build configuration list for PBXNativeTarget "ReddOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148B7F8523E0AB0700BECD84 /* Debug */,
+				148B7F8623E0AB0700BECD84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		148B7F5D23E0AB0600BECD84 /* ReddOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				148B7F5E23E0AB0600BECD84 /* ReddOS.xcdatamodel */,
+			);
+			currentVersion = 148B7F5E23E0AB0600BECD84 /* ReddOS.xcdatamodel */;
+			path = ReddOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 148B7F4723E0AB0600BECD84 /* Project object */;
+}
